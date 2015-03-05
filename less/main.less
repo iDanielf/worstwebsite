@@ -1,0 +1,29 @@
+// out: ../css/main.css
+// main: main.less
+
+@import "colors";
+@import "fonts";
+
+
+body{
+  background:@dark;
+  margin: 0;
+  padding: 0;
+  color:blue;
+}
+
+
+h1{
+  font-size:6em;
+  background:@bright;
+  padding:.25em;
+
+  &:hover {background: @wildcard;}
+
+    span{ color: @accent; }
+}
+
+span{
+  color:red;
+  .sans-serif();
+}
